@@ -2,7 +2,7 @@ main.o: main.c \
  /opt/litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio/stdio.h \
  /opt/litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/inttypes.h \
  /opt/litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/newlib.h \
- /home/andres/Escritorio/Digital2_rep/lab02-2022-2-grupo01-22-2/SoC/lab03-2022-2-grupo01-22-2/SoC_project/build/software/include/../libc/picolibc.h \
+ /home/andres/Escritorio/SoC_rep/ProyectoGr3/SoC_project/build/software/include/../libc/picolibc.h \
  /opt/litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/sys/config.h \
  /opt/litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/machine/ieeefp.h \
  /opt/litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/sys/features.h \
@@ -27,15 +27,15 @@ main.o: main.c \
  /opt/litex/litex/litex/soc/cores/cpu/vexriscv/irq.h \
  /opt/litex/litex/litex/soc/cores/cpu/vexriscv/system.h \
  /opt/litex/litex/litex/soc/cores/cpu/vexriscv/csr-defs.h \
- /home/andres/Escritorio/Digital2_rep/lab02-2022-2-grupo01-22-2/SoC/lab03-2022-2-grupo01-22-2/SoC_project/build/software/include/generated/soc.h \
- /home/andres/Escritorio/Digital2_rep/lab02-2022-2-grupo01-22-2/SoC/lab03-2022-2-grupo01-22-2/SoC_project/build/software/include/generated/csr.h \
+ /home/andres/Escritorio/SoC_rep/ProyectoGr3/SoC_project/build/software/include/generated/soc.h \
+ /home/andres/Escritorio/SoC_rep/ProyectoGr3/SoC_project/build/software/include/generated/csr.h \
  /opt/litex/litex/litex/soc/software/include/hw/common.h \
  /opt/litex/litex/litex/soc/software/libbase/uart.h \
  /opt/litex/litex/litex/soc/software/libbase/console.h delay.h
 /opt/litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/tinystdio/stdio.h:
 /opt/litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/inttypes.h:
 /opt/litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/newlib.h:
-/home/andres/Escritorio/Digital2_rep/lab02-2022-2-grupo01-22-2/SoC/lab03-2022-2-grupo01-22-2/SoC_project/build/software/include/../libc/picolibc.h:
+/home/andres/Escritorio/SoC_rep/ProyectoGr3/SoC_project/build/software/include/../libc/picolibc.h:
 /opt/litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/sys/config.h:
 /opt/litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/machine/ieeefp.h:
 /opt/litex/pythondata-software-picolibc/pythondata_software_picolibc/data/newlib/libc/include/sys/features.h:
@@ -60,8 +60,8 @@ main.o: main.c \
 /opt/litex/litex/litex/soc/cores/cpu/vexriscv/irq.h:
 /opt/litex/litex/litex/soc/cores/cpu/vexriscv/system.h:
 /opt/litex/litex/litex/soc/cores/cpu/vexriscv/csr-defs.h:
-/home/andres/Escritorio/Digital2_rep/lab02-2022-2-grupo01-22-2/SoC/lab03-2022-2-grupo01-22-2/SoC_project/build/software/include/generated/soc.h:
-/home/andres/Escritorio/Digital2_rep/lab02-2022-2-grupo01-22-2/SoC/lab03-2022-2-grupo01-22-2/SoC_project/build/software/include/generated/csr.h:
+/home/andres/Escritorio/SoC_rep/ProyectoGr3/SoC_project/build/software/include/generated/soc.h:
+/home/andres/Escritorio/SoC_rep/ProyectoGr3/SoC_project/build/software/include/generated/csr.h:
 /opt/litex/litex/litex/soc/software/include/hw/common.h:
 /opt/litex/litex/litex/soc/software/libbase/uart.h:
 /opt/litex/litex/litex/soc/software/libbase/console.h:
