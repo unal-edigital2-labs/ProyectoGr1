@@ -1,4 +1,4 @@
-8from litex.build.generic_platform import *
+from litex.build.generic_platform import *
 from litex.build.xilinx import XilinxPlatform, VivadoProgrammer
 
 # IOs ----------------------------------------------------------------------------------------------
