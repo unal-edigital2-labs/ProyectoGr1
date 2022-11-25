@@ -4,6 +4,33 @@ from litex.build.xilinx import XilinxPlatform, VivadoProgrammer
 # IOs ----------------------------------------------------------------------------------------------
 
 _io = [
+
+#CAMARA
+    ("CAM_px_data",  0, Pins("G18"), IOStandard("LVCMOS33")),
+    ("CAM_px_data",  1, Pins("G17"), IOStandard("LVCMOS33")),
+    ("CAM_px_data",  2, Pins("F18"), IOStandard("LVCMOS33")),
+    ("CAM_px_data",  3, Pins("E18"), IOStandard("LVCMOS33")),
+    ("CAM_px_data",  4, Pins("E17"), IOStandard("LVCMOS33")),
+    ("CAM_px_data",  5, Pins("D18"), IOStandard("LVCMOS33")),
+    ("CAM_px_data",  6, Pins("D17"), IOStandard("LVCMOS33")),
+    ("CAM_px_data",  7, Pins("C17"), IOStandard("LVCMOS33")),
+    ("CAM_href",  0, Pins("G13"), IOStandard("LVCMOS33")),
+    ("CAM_pclk",  0, Pins("F16"), IOStandard("LVCMOS33")),
+    ("CAM_pwdn",  0, Pins("H14"), IOStandard("LVCMOS33")),
+    ("CAM_vsync",  0, Pins("G16"), IOStandard("LVCMOS33")),
+    ("CAM_xclk",  0, Pins("F13"), IOStandard("LVCMOS33")),
+    
+
+ # Servomotor
+     ("pwm__", 1, Pins("D14"), IOStandard("LVCMOS33")),
+
+     #UARTS
+    #("uart1", 0,
+     #   Subsignal("tx", Pins("K1")),
+      #  Subsignal("rx", Pins("F6")),
+       # IOStandard("LVCMOS33"),
+    #),
+
     ("led",  0, Pins("H17"), IOStandard("LVCMOS33")),
     ("led",  1, Pins("K15"), IOStandard("LVCMOS33")),
     ("led",  2, Pins("J13"), IOStandard("LVCMOS33")),
@@ -90,8 +117,14 @@ _io = [
     ("vsync", 0, Pins("B12"), IOStandard("LVCMOS33")),
     
 
-     # Servomotor
-     ("pwm__", 1, Pins("E6"), IOStandard("LVCMOS33")),
+    ("cam_data_in",  0, Pins("T8"), IOStandard("LVCMOS33")),
+    ("cam_data_in",  1, Pins("U8"), IOStandard("LVCMOS33")),
+    ("cam_data_in", 2, Pins("R16"), IOStandard("LVCMOS33")),
+    ("cam_data_in", 3, Pins("T13"), IOStandard("LVCMOS33")),
+    ("cam_data_in", 4, Pins("H6"), IOStandard("LVCMOS33")),
+    ("cam_data_in", 5, Pins("U12"), IOStandard("LVCMOS33")),
+    ("cam_data_in", 6, Pins("U11"), IOStandard("LVCMOS33")),
+    ("cam_data_in", 7, Pins("E7"), IOStandard("LVCMOS33")),
   
     ("cpu_reset", 0, Pins("C12"), IOStandard("LVCMOS33")),
     
@@ -155,7 +188,8 @@ class Platform(XilinxPlatform):
 
     def __init__(self):
         XilinxPlatform.__init__(self, "xc7a100t-CSG324-1", _io, toolchain="vivado")
-        self.add_platform_command("set_property INTERNAL_VREF 0.750 [get_iobanks 34]")
+        self.add_platform_command("set_property INTERNAL_VREF 0.750 [get_iobanks 34]")  
+        self.add_platform_command("set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets CAM_pclk]"
 
     def create_programmer(self):
         return VivadoProgrammer()
