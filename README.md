@@ -17,3 +17,4 @@
   
   ![img2](https://github.com/unal-edigital2-labs/ProyectoGr3/blob/main/Captura%20de%20pantalla%20de%202022-11-01%2000-41-19.jpg)
 
+Para la implementación adicional a los perifericos ya implementados como los botones o los switches, se agregaron principalmente: PWM, por medio de la funcion que Litex ya tiene incluida, una uart adicional para realizar la lectura de datos desde el modulo de arduino que, principalmente 
