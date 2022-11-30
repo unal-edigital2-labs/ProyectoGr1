@@ -38,13 +38,14 @@ _io = [
     ("sw", 14, Pins("U11"), IOStandard("LVCMOS33")),
     ("sw", 15, Pins("V10"), IOStandard("LVCMOS33")),
     
-    ("pwm__", 1, Pins("E6"), IOStandard("LVCMOS33")),
-  
     ("btnc", 0, Pins("N17"), IOStandard("LVCMOS33")),
     ("btnd", 0, Pins("P18"), IOStandard("LVCMOS33")),
     ("btnu", 0, Pins("M18"), IOStandard("LVCMOS33")),
     ("btnr", 0, Pins("M17"), IOStandard("LVCMOS33")),
     ("btnl", 0, Pins("P17"), IOStandard("LVCMOS33")),
+
+    ("pwm__", 1, Pins("E6"), IOStandard("LVCMOS33")),
+
 
     ("ledRGB", 1,
         Subsignal("r", Pins("N15")),
@@ -83,6 +84,18 @@ _io = [
     ("serial", 0,
         Subsignal("tx", Pins("D4")),
         Subsignal("rx", Pins("C4")),
+        IOStandard("LVCMOS33"),
+    ),
+
+    ("i2c_master", 0,
+        Subsignal("scl", Pins("D17")),  # clock
+        Subsignal("sda", Pins("E17")),  # data
+        IOStandard("LVCMOS33"),
+     ),
+
+     ("uart1", 0,
+        Subsignal("tx", Pins("H4")),
+        Subsignal("rx", Pins("H1")),
         IOStandard("LVCMOS33"),
     ),
 
